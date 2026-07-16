@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>個人履歷｜你的名字</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 圖示套件 -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- 上方選單 -->
+    <header>
+        <nav class="navbar">
+            <a href="#about">BIO</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- 個人介紹 -->
+    <section id="about" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="profile-area">
+                <img src="images/profile.jpg"
+                     alt="個人照片"
+                     class="profile-photo">
+            </div>
+
+            <div class="intro-area">
+                <h1>黃曉暄</h1>
+                <h2>Ava</h2>
+
+                <p>
+                    目前從事農業水資源與灌溉資料相關工作，
+                    主要負責資料整理、Python 程式處理、
+                    MS SQL 資料庫建置，以及機器學習與 LINE Bot 設計，
+                    目前在設計APP開發中。
+                </p>
+
+                <p>
+                    熟悉 Excel、Python、資料庫及資料視覺化，自學手機APP開發
+                    並具有灌溉資料分析、公務統計資料彙整與系統功能規劃經驗。
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>MS SQL</span>
+                    <span>Excel</span>
+                    <span>Data Analysis</span>
+                </div>
+
+                <div class="social-links">
+                    <a href="mailto:yourmail@example.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://github.com/你的帳號" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main>
+
+        <!-- 學歷 -->
+        <section id="education" class="section">
+            <h2 class="section-title">EDUCATION</h2>
+
+            <div class="timeline">
+
+                <article class="card">
+                    <h3>中央大學｜統研所</h3>
+                    <p class="date">2023 年 9 月－2025 年 6月</p>
+
+                    <p>
+                        說明在學期間修習的課程、研究方向、
+                        專題內容或參與活動。
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>國立臺灣師範大學｜數學系</h3>
+                    <p class="date">2017 年 9 月－2022 年 6月</p>
+
+                    <p>
+                        可放研究主題、論文題目、專案成果或相關技能。
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 工作經歷 -->
+        <section id="experience" class="section gray-section">
+            <h2 class="section-title">EXPERIENCE</h2>
+
+            <div class="card">
+                <h3>公司或單位名稱｜職稱</h3>
+                <p class="date">2024 年－目前</p>
+
+                <ul>
+                    <li>定期彙整灌溉用水與插秧進度資料。</li>
+                    <li>使用 Python 整理、轉換及匯入資料。</li>
+                    <li>建置與維護 MS SQL 資料庫。</li>
+                    <li>規劃灌溉資料查詢工具與 LINE Bot 功能。</li>
+                    <li>製作正式報告、圖表及統計資料。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 技能 -->
+        <section id="skills" class="section">
+            <h2 class="section-title">SKILLS</h2>
+
+            <div class="skill-grid">
+
+                <div class="skill-card">
+                    <h3>程式與資料處理</h3>
+                    <p>Python、Pandas、資料清理、資料轉檔</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>資料庫</h3>
+                    <p>MS SQL、資料表設計、資料匯入與查詢</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>辦公軟體</h3>
+                    <p>Excel、Word、PowerPoint、正式報告製作</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>網頁與系統</h3>
+                    <p>HTML、CSS、Flask、LINE Messaging API</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 作品集 -->
+        <section id="portfolio" class="section gray-section">
+            <h2 class="section-title">PORTFOLIO</h2>
+
+            <div class="portfolio-grid">
+
+                <article class="project-card">
+                    <h3>后里圳通水資訊查詢系統</h3>
+
+                    <p>
+                        整合水利小組、供灌支線、工作站、
+                        上游測站及灌溉公告資訊。
+                    </p>
+
+                    <a href="#" target="_blank">查看作品</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>插秧進度查詢工具</h3>
+
+                    <p>
+                        將雲端表單資料透過 Python 整理後匯入
+                        MS SQL，提供年度、期作及旬別查詢。
+                    </p>
+
+                    <a href="#" target="_blank">查看作品</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>LINE Bot 定位查詢功能</h3>
+
+                    <p>
+                        使用者傳送位置後，自動尋找最近水利小組，
+                        並回傳工作站、支線與即時水情。
+                    </p>
+
+                    <a href="#" target="_blank">查看作品</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 聯絡方式 -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">CONTACT</h2>
+
+            <p>
+                Email：
+                <a href="mailto:smal1232108@gmail.com">
+                    small1232108@gmail.com
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 你的名字. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

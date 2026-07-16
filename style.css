@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family:
+        "Microsoft JhengHei",
+        "Noto Sans TC",
+        Arial,
+        sans-serif;
+
+    color: #24313d;
+    background: #f4f5f7;
+    line-height: 1.8;
+}
+
+/* 上方導覽列 */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    padding: 18px 30px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    transition: 0.25s;
+}
+
+.navbar a:hover {
+    color: #187a9f;
+    border-bottom-color: #187a9f;
+}
+
+/* 頂部個人介紹 */
+
+.hero {
+    position: relative;
+    min-height: 430px;
+    background:
+        url("images/background.jpg")
+        center / cover no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 91, 119, 0.82);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1300px;
+    min-height: 430px;
+    margin: auto;
+    padding: 60px 35px;
+
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    align-items: center;
+    gap: 55px;
+
+    color: white;
+}
+
+.profile-area {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 245px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.35);
+}
+
+.intro-area h1 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 34px;
+}
+
+.intro-area h2 {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.intro-area p {
+    margin-top: 18px;
+    font-size: 17px;
+}
+
+.tags {
+    margin-top: 20px;
+}
+
+.tags span {
+    display: inline-block;
+    margin: 5px 4px 0 0;
+    padding: 3px 10px;
+    background: rgba(255, 255, 255, 0.23);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 18px;
+}
+
+.social-links a {
+    margin-right: 14px;
+    color: white;
+    font-size: 24px;
+}
+
+/* 主要內容 */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 35px;
+}
+
+.gray-section {
+    max-width: none;
+    padding-left: max(35px, calc((100% - 1130px) / 2));
+    padding-right: max(35px, calc((100% - 1130px) / 2));
+    background: #e9edf0;
+}
+
+.section-title {
+    width: fit-content;
+    margin-bottom: 28px;
+    padding-bottom: 5px;
+    font-size: 28px;
+    border-bottom: 4px solid #55a6c8;
+}
+
+/* 卡片 */
+
+.card,
+.skill-card,
+.project-card {
+    margin-bottom: 24px;
+    padding: 28px;
+    background: white;
+    border-radius: 13px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h3,
+.skill-card h3,
+.project-card h3 {
+    margin-bottom: 8px;
+    color: #176c8d;
+}
+
+.date {
+    margin-bottom: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.card ul {
+    padding-left: 22px;
+}
+
+/* 時間軸 */
+
+.timeline {
+    padding-left: 28px;
+    border-left: 4px solid #69add0;
+}
+
+/* 技能 */
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.skill-card {
+    margin-bottom: 0;
+}
+
+/* 作品 */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    margin-bottom: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 16px;
+
+    color: white;
+    background: #187a9f;
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    background: #105d78;
+}
+
+.contact-section a {
+    color: #187a9f;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: #1c3f50;
+}
+
+/* 手機版 */
+
+@media (max-width: 850px) {
+
+    .navbar a {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 190px;
+        height: 190px;
+    }
+
+    .intro-area h1,
+    .intro-area h2 {
+        display: block;
+    }
+
+    .skill-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.navbar a.active {
+    color: #187a9f;
+    border-bottom-color: #187a9f;
+}
