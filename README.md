@@ -4,4 +4,4 @@
 
 ## 相關文件
 
-[下載 GitHub Pages 操作流程 Word 檔](resume.docx)
+[下載 Word 文件](https://sammy0323.github.io/personal-resume/resume.docx)
