@@ -1,7 +1,5 @@
 # 個人履歷網站
 
-這是我的個人履歷網站。
+🌐 [查看履歷網站](https://sammy0323.github.io/personal-resume/)
 
-## 相關文件
-
-📄 [下載 Word 文件](./GitHub_Pages_個人履歷網站發布流程.docx?raw=1)
+📄 [下載 Word 文件](https://github.com/sammy0323/personal-resume/raw/refs/heads/main/resume.docx)
