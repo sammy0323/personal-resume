@@ -1,0 +1,476 @@
+/* =========================
+   基本設定
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-family:
+        "Microsoft JhengHei",
+        "Noto Sans TC",
+        Arial,
+        sans-serif;
+
+    color: #4f3b45;
+    background: #fff8fb;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   上方導覽列
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(163, 91, 122, 0.15);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    padding: 18px 28px;
+    color: #5f4651;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    transition: 0.25s;
+}
+
+.navbar a:hover {
+    color: #d86f9b;
+    border-bottom-color: #d86f9b;
+}
+
+.navbar a.active {
+    color: #d86f9b;
+    border-bottom-color: #d86f9b;
+}
+
+
+/* =========================
+   頂部個人介紹區
+========================= */
+
+.hero {
+    position: relative;
+    min-height: 430px;
+    background: linear-gradient(
+        135deg,
+        #c86f96,
+        #b75982
+    );
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(145, 64, 101, 0.18);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    max-width: 1300px;
+    min-height: 430px;
+    margin: auto;
+    padding: 60px 35px;
+
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    align-items: center;
+    gap: 55px;
+
+    color: white;
+}
+
+.profile-area {
+    text-align: center;
+}
+
+.profile-placeholder {
+    width: 245px;
+    height: 245px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.4);
+
+    background: rgba(255, 255, 255, 0.18);
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    box-shadow: 0 8px 25px rgba(100, 38, 67, 0.2);
+}
+
+.profile-photo {
+    width: 245px;
+    height: 245px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 6px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 25px rgba(100, 38, 67, 0.2);
+}
+
+.intro-area h1 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 34px;
+}
+
+.intro-area h2 {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.intro-area p {
+    margin-top: 18px;
+    font-size: 17px;
+}
+
+.tags {
+    margin-top: 20px;
+}
+
+.tags span {
+    display: inline-block;
+
+    margin: 5px 4px 0 0;
+    padding: 4px 11px;
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 18px;
+}
+
+.social-links a {
+    margin-right: 14px;
+
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.social-links a:hover {
+    opacity: 0.75;
+}
+
+
+/* =========================
+   主要內容區塊
+========================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 35px;
+}
+
+.gray-section {
+    max-width: none;
+
+    padding-left: max(35px, calc((100% - 1130px) / 2));
+    padding-right: max(35px, calc((100% - 1130px) / 2));
+
+    background: #fbe6ef;
+}
+
+.section-title {
+    width: fit-content;
+
+    margin-bottom: 28px;
+    padding-bottom: 5px;
+
+    font-size: 28px;
+    color: #6b4456;
+
+    border-bottom: 4px solid #d86f9b;
+}
+
+
+/* =========================
+   卡片樣式
+========================= */
+
+.card,
+.skill-card,
+.project-card {
+    margin-bottom: 24px;
+    padding: 28px;
+
+    background: white;
+    border: 1px solid #f3d5e2;
+    border-radius: 14px;
+
+    box-shadow: 0 6px 20px rgba(166, 91, 122, 0.1);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.card:hover,
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 24px rgba(166, 91, 122, 0.16);
+}
+
+.card h3,
+.skill-card h3,
+.project-card h3 {
+    margin-bottom: 8px;
+    color: #a94f76;
+}
+
+.date {
+    margin-bottom: 13px;
+    color: #8a6d79;
+    font-weight: bold;
+}
+
+.card ul {
+    padding-left: 22px;
+}
+
+
+/* =========================
+   時間軸
+========================= */
+
+.timeline {
+    padding-left: 28px;
+    border-left: 4px solid #d86f9b;
+}
+
+
+/* =========================
+   技能區
+========================= */
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.skill-card {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   作品集區
+========================= */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    margin-bottom: 0;
+}
+
+.project-card a {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 8px 18px;
+
+    color: white;
+    background: #d86f9b;
+
+    border-radius: 7px;
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.project-card a:hover {
+    background: #a94f76;
+}
+
+
+/* =========================
+   Word 下載按鈕
+========================= */
+
+.download-button {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    color: white;
+    background: #d86f9b;
+
+    border-radius: 7px;
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(166, 91, 122, 0.18);
+
+    transition: 0.2s;
+}
+
+.download-button:hover {
+    background: #a94f76;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   聯絡方式
+========================= */
+
+.contact-section a {
+    color: #c35f8b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   頁尾
+========================= */
+
+footer {
+    padding: 22px;
+
+    text-align: center;
+    color: white;
+
+    background: #8f4968;
+}
+
+
+/* =========================
+   手機版
+========================= */
+
+@media (max-width: 850px) {
+
+    .navbar a {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .profile-photo,
+    .profile-placeholder {
+        width: 190px;
+        height: 190px;
+    }
+
+    .intro-area h1,
+    .intro-area h2 {
+        display: block;
+    }
+
+    .skill-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .gray-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* =========================
+   小螢幕手機
+========================= */
+
+@media (max-width: 520px) {
+
+    .navbar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    .navbar a {
+        white-space: nowrap;
+    }
+
+    .hero-content {
+        padding: 35px 20px;
+    }
+
+    .intro-area h1 {
+        font-size: 28px;
+    }
+
+    .intro-area h2 {
+        font-size: 18px;
+    }
+
+    .intro-area p {
+        font-size: 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .card,
+    .skill-card,
+    .project-card {
+        padding: 22px;
+    }
+}
